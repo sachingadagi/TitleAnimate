@@ -18,7 +18,12 @@ var interval = null;
         if (defaultSettings.enabled === true) {
             interval = setInterval(timedTitle, defaultSettings.duration);
         } else {
-            clearInterval(interval);
+                if(defaultSettings.enabled == true || defaultSettings == "clear" || defaultSettings=="stop")
+                {
+                    $("title").title = originalTitle;
+                    clearInterval(interval);
+
+                }
         }
     };
     timedTitle = function () {
