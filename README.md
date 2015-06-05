@@ -20,7 +20,17 @@ here <i>duration</i> is in milliseconds
 
 
 <h4> To Stop the current animation </h4>
-<code> $('title').animateTitle({"enabled":false});</code>
+<code> $('title').animateTitle({"enabled":false}); 
+</code>
+<br/>
+OR
+<br/>
+<code> $('title').animateTitle("clear");</code>
+<br/>
+OR
+<br/>
+<code> $('title').animateTitle("stop");</code>
+
 <hr>
 
 <h4>Default Configuration </h4>
